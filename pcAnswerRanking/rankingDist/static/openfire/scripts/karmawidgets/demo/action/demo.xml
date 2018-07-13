@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BL>
+  <Actions>
+    
+    <Action name="开始" type="START" for="" next="判断" desc="">
+      <DBConnection name="dsfa" trans="false" />
+    </Action>
+    
+    <Action name="判断" type="SWITCH" for="" next="结束" desc="">
+      <Switch>
+        <Rule expression="'{@actionType}'=='query_all_karma_plugin_demo'" desc="" next="查询总记录数" />
+        <Rule expression="'{@actionType}'=='query_karma_plugin_demo'" desc="" next="分页查询" />
+        <Rule expression="'{@actionType}'=='query'" desc="" next="查询" />
+      </Switch>
+    </Action>
+    
+    <Action name="查询总记录数" type="SQL_QUERY" for="" next="分页查询" desc="查询总记录数">
+      <Expression>
+        <Sql><![CDATA[select  COUNT(X.ID) AS NUM from karma_plugin_demo X   ]]></Sql>
+        <Parameters />
+      </Expression>
+      <DataSet name="karma_plugin_demo_num" key="" parentkey="">
+        <Data format="" name="NUM">NUM</Data>
+      </DataSet>
+    </Action>
+    
+    <Action name="分页查询" type="SQL_QUERY" for="" next="结束" desc="分页查询">
+      <Expression>
+        <Sql><![CDATA[select X.ID,X.NAME,X.EMAIL,X.CREATE_DATE,X.DESCN from karma_plugin_demo X   LIMIT ?,?  ]]></Sql>
+        <Parameters>
+          <Parameter name="MINNUM" type="INT">{@MINNUM}</Parameter>
+          <Parameter name="PAGECOUNT" type="INT">{@PAGECOUNT}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="karma_plugin_demo" key="{%GUID:N}" parentkey="">
+        <Data format="" name="ID">ID</Data>
+        <Data format="" name="NAME">NAME</Data>
+        <Data format="" name="EMAIL">EMAIL</Data>
+        <Data format="" name="CREATE_DATE">CREATE_DATE</Data>
+        <Data format="" name="DESCN">DESCN</Data>
+      </DataSet>
+    </Action>
+
+    <Action name="查询" type="SQL_QUERY" for="" next="结束" desc="查询">
+      <Expression>
+        <Sql><![CDATA[select X.ID,X.NAME,X.EMAIL,X.CREATE_DATE,X.DESCN from karma_plugin_demo X  LIMIT 0,10  ]]></Sql>
+        <Parameters>
+        </Parameters>
+      </Expression>
+      <DataSet name="karma_plugin_demo" key="{%GUID:N}" parentkey="">
+        <Data format="" name="ID">ID</Data>
+        <Data format="" name="NAME">NAME</Data>
+        <Data format="" name="EMAIL">EMAIL</Data>
+        <Data format="" name="CREATE_DATE">CREATE_DATE</Data>
+        <Data format="" name="DESCN">DESCN</Data>
+      </DataSet>
+    </Action>
+    
+    <Action name="结束" type="END" for="" next="" desc="">
+      <Element>karma_plugin_demo</Element>
+      <ArrayKey>karma_plugin_demo</ArrayKey>
+      <Element>karma_plugin_demo_num</Element>
+    </Action>
+  </Actions>
+</BL>

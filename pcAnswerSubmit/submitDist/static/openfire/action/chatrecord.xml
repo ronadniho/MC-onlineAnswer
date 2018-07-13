@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BL>
+  <Actions>
+    <Action name="开始" type="START" for="" next="判断" desc="">
+      <DBConnection name="dsfa" trans="false" />
+    </Action>
+    <Action name="判断" type="SWITCH" for="" next="结束" desc="">
+      <Switch>
+        <Rule expression="'{@actionType}'=='create_chat_record'" desc="" next="查询聊天记录是否存在" />
+        <Rule expression="'{@actionType}'=='query_sender_info'" desc="" next="查询发送者信息" />
+        <Rule expression="'{@actionType}'=='query_chat_record'" desc="" next="查询聊天记录" />
+        <Rule expression="'{@actionType}'=='query_chat_record_interface'" desc="" next="查询聊天记录接口" />
+        <Rule expression="'{@actionType}'=='query_chat_record_interface_all_form'" desc="" next="查询当前登录者关联的所有表单的最后聊天记录" />
+        <Rule expression="'{@actionType}'=='del_chat_record'" desc="" next="删除聊天记录" />
+      </Switch>
+    </Action>
+
+    <Action name="查询聊天记录是否存在" type="SQL_QUERY" for="" next="判断聊天记录存在性" desc="查询聊天记录是否存在">
+      <Expression>
+        <Sql>
+          <![CDATA[
+        select count(id) as num from chat_record where id = ? 
+        ]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="ID" type="STRING">{@ID}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="chat_record_num" key="" parentkey="">
+        <Data format="" name="NUM">num</Data>
+      </DataSet>
+    </Action>
+    
+    <Action name="判断聊天记录存在性" type="SWITCH" for="" next="结束" desc="">
+      <Switch>
+        <Rule expression="'{@chat_record_num/NUM}'!='0'" desc="" next="查询新插入的聊天记录" />
+        <Rule expression="'{@chat_record_num/NUM}'=='0'" desc="" next="添加聊天记录" />
+      </Switch>
+    </Action>
+    
+    <Action name="添加聊天记录" type="SQL_EXECUTE" for="" next="查询新插入的聊天记录" desc="添加聊天记录">
+      <Expression>
+        <Sql><![CDATA[insert into chat_record(ID,MSGCONTENT,MSGHTML,DATETIME,SORT,AI_ID,SENDER,MSG_TYPE) select ?,?,?,?,IFNULL(max(SORT),0)+1,?,?,? from chat_record where AI_ID = ? ]]></Sql>
+        <Parameters>
+          <Parameter name="ID" type="STRING">{@ID}</Parameter>
+          <Parameter name="MSGCONTENT" type="STRING">{@MSGCONTENT}</Parameter>
+          <Parameter name="MSGHTML" type="STRING">{@MSGHTML}</Parameter>
+          <Parameter name="DATETIME" type="STRING">{@DATETIME}</Parameter>
+          <Parameter name="AI_ID" type="STRING">{@AI_ID}</Parameter>
+          <Parameter name="SENDER" type="STRING">{@SENDER}</Parameter>
+          <Parameter name="MSG_TYPE" type="STRING">{@MSG_TYPE}</Parameter>
+          <Parameter name="AI_ID" type="STRING">{@AI_ID}</Parameter>
+        </Parameters>
+      </Expression>
+    </Action>
+
+    <Action name="查询新插入的聊天记录" type="SQL_QUERY" for="" next="结束" desc="查询新插入的聊天记录">
+      <Expression>
+        <Sql>
+          <![CDATA[
+        select c.ID,c.MSGCONTENT,c.MSGHTML,DATE_FORMAT(c.DATETIME,'%Y-%m-%d %T') AS DATETIME,c.SORT,c.AI_ID,c.SENDER,o.NAME,o.USERPHOTO  from chat_record c 
+        left join user_info o on c.sender = o.id 
+        where c.ID = ? 
+        ]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="ID" type="STRING">{@ID}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="chat_record" key="ID" parentkey="">
+        <Data format="" name="ID">ID</Data>
+        <Data format="" name="MSGCONTENT">MSGCONTENT</Data>
+        <Data format="" name="MSGHTML">MSGHTML</Data>
+        <Data format="" name="DATETIME">DATETIME</Data>
+        <Data format="" name="SORT">SORT</Data>
+        <Data format="" name="AI_ID">AI_ID</Data>
+        <Data format="" name="SENDER">SENDER</Data>
+        <Data format="" name="NAME">NAME</Data>
+        <Data format="" name="USERPHOTO">USERPHOTO</Data>
+      </DataSet>
+    </Action>
+    
+    <Action name="查询聊天记录" type="SQL_QUERY" for="" next="结束" desc="查询聊天记录">
+      <Expression>
+        <Sql>
+          <![CDATA[
+        select c.ID,c.MSGCONTENT,c.MSGHTML,DATE_FORMAT(c.DATETIME,'%Y-%m-%d %T') AS DATETIME,c.SORT,c.AI_ID,c.SENDER,o.NAME,o.USERPHOTO from chat_record c 
+        left join USER_INFO o on c.sender = o.id 
+        where c.AI_ID = ? order by c.SORT DESC limit ?,?
+        ]]></Sql>
+        <Parameters>
+          <Parameter name="AI_ID" type="STRING">{@AI_ID}</Parameter>
+          <Parameter name="MINNUM" type="INT">{@MINNUM}</Parameter>
+          <Parameter name="PAGECOUNT" type="INT">{@PAGECOUNT}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="chat_record" key="ID" parentkey="">
+        <Data format="" name="ID">ID</Data>
+        <Data format="" name="MSGCONTENT">MSGCONTENT</Data>
+        <Data format="" name="MSGHTML">MSGHTML</Data>
+        <Data format="" name="DATETIME">DATETIME</Data>
+        <Data format="" name="SORT">SORT</Data>
+        <Data format="" name="AI_ID">AI_ID</Data>
+        <Data format="" name="SENDER">SENDER</Data>
+        <Data format="" name="NAME">NAME</Data>
+        <Data format="" name="USERPHOTO">USERPHOTO</Data>
+      </DataSet>
+    </Action>
+
+    <Action name="查询聊天记录接口" type="SQL_QUERY" for="" next="结束" desc="查询聊天记录接口">
+      <Expression>
+        <Sql>
+          <![CDATA[
+        select c.ID,c.MSGCONTENT,c.MSGHTML,DATE_FORMAT(c.DATETIME,'%Y-%m-%d %T') AS DATETIME,c.SORT,c.AI_ID,c.SENDER,o.NAME,o.USERPHOTO from chat_record c 
+        left join USER_INFO o on c.sender = o.id 
+        where c.AI_ID IN 
+        (SELECT FN.INFO_ID FROM FILE_NODES FN INNER JOIN FILE_INFOS FI ON FN.`INFO_ID`=FI.ID WHERE FN.`USER_ID`=? AND FI.STATUS <> 2  GROUP BY FN.INFO_ID ) 
+        order by c.DATETIME DESC,c.SORT DESC limit 0,1 
+        ]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="USER_ID" type="STRING">{#userid}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="chat_record" key="ID" parentkey="">
+        <Data format="" name="ID">ID</Data>
+        <Data format="" name="MSGCONTENT">MSGCONTENT</Data>
+        <Data format="" name="MSGHTML">MSGHTML</Data>
+        <Data format="" name="DATETIME">DATETIME</Data>
+        <Data format="" name="SORT">SORT</Data>
+        <Data format="" name="AI_ID">AI_ID</Data>
+        <Data format="" name="SENDER">SENDER</Data>
+        <Data format="" name="NAME">NAME</Data>
+        <Data format="" name="USERPHOTO">USERPHOTO</Data>
+      </DataSet>
+    </Action>
+    
+    <Action name="查询当前登录者关联的所有表单的最后聊天记录" type="SQL_QUERY" for="" next="结束" desc="查询当前登录者关联的所有表单的最后聊天记录">
+      <Expression>
+        <Sql>
+          <![CDATA[
+        SELECT a.ID,a.MSGCONTENT,a.MSGHTML,DATE_FORMAT(a.DATETIME,'%Y-%m-%d %T') AS DATETIME,a.SORT,a.AI_ID,a.SENDER,o.NAME,o.USERPHOTO,H.TITLE 
+FROM CHAT_RECORD AS A 
+LEFT JOIN user_info o ON a.sender = o.id 
+LEFT JOIN FILE_INFOS H ON A.AI_ID = H.ID 
+WHERE a.SORT = (SELECT MAX(c.SORT) FROM CHAT_RECORD c WHERE A.AI_ID=c.AI_ID) AND A.AI_ID IN 
+(
+SELECT FN.INFO_ID FROM FILE_NODES FN INNER JOIN FILE_INFOS FI ON FN.`INFO_ID`=FI.ID WHERE FN.`USER_ID`= ? AND FI.STATUS <> 2 GROUP BY FN.INFO_ID 
+)
+        ]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="USER_ID" type="STRING">{#userid}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="chat_record" key="ID" parentkey="">
+        <Data format="" name="ID">ID</Data>
+        <Data format="" name="MSGCONTENT">MSGCONTENT</Data>
+        <Data format="" name="MSGHTML">MSGHTML</Data>
+        <Data format="" name="DATETIME">DATETIME</Data>
+        <Data format="" name="SORT">SORT</Data>
+        <Data format="" name="AI_ID">AI_ID</Data>
+        <Data format="" name="SENDER">SENDER</Data>
+        <Data format="" name="NAME">NAME</Data>
+        <Data format="" name="USERPHOTO">USERPHOTO</Data>
+      </DataSet>
+    </Action>
+
+    <Action name="查询发送者信息" type="SQL_QUERY" for="" next="结束" desc="查询发送者信息">
+      <Expression>
+        <Sql>
+          <![CDATA[
+        SELECT O.ID,O.NAME,O.USERPHOTO  FROM  USER_INFO O  WHERE O.ID = ? 
+        ]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="ID" type="STRING">{@SENDER}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="userinfo" key="ID" parentkey="">
+        <Data format="" name="ID">ID</Data>
+        <Data format="" name="NAME">NAME</Data>
+        <Data format="" name="USERPHOTO">USERPHOTO</Data>
+      </DataSet>
+    </Action>
+
+    <Action name="删除聊天记录" type="SQL_EXECUTE" for="" next="结束" desc="删除聊天记录">
+      <Expression>
+        <Sql>
+          <![CDATA[
+          DELETE FROM chat_record WHERE ID = ? 
+					]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="ID" type="STRING">{@ID}</Parameter>
+        </Parameters>
+      </Expression>
+    </Action>
+    
+    
+    <Action name="结束" type="END" for="" next="" desc="">
+      <Element>chat_record</Element>
+      <ArrayKey>chat_record</ArrayKey>
+      <Element>userinfo</Element>
+      <ArrayKey>userinfo</ArrayKey>
+    </Action>
+  </Actions>
+</BL>

@@ -1,0 +1,25 @@
+﻿.demo-div1{
+    height:50px;
+    text-align:left;
+    width:1200px;
+}
+.demo-div2 {
+    height: 60px;
+    text-align: left;
+    width: 1200px;
+}
+.demo-div3 {
+    height: 600px;
+    text-align: left;
+    width: 1200px;
+    padding-left:100px;
+}
+.demo-div4 {
+    height: 30px;
+    text-align: left;
+    width: 1200px;
+}
+.demo-temp {
+    background: linear-gradient(#0f8990, #69dce2);
+    color:#f1efef
+}

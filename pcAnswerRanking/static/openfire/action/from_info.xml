@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BL>
+  <Actions>
+    
+    <Action name="开始" type="START" for="" next="判断" desc="">
+      <DBConnection name="dsfa" trans="false" />
+    </Action>
+    
+    <Action name="判断" type="SWITCH" for="" next="结束" desc="">
+      <Switch>
+        <Rule expression="'{@actionType}'=='query_form_info'" desc="" next="查询表单信息" />
+      </Switch>
+    </Action>
+
+    <Action name="查询表单信息" type="SQL_QUERY" for="" next="查询流程相关人员" desc="查询表单信息">
+      <Expression>
+        <Sql>
+          <![CDATA[
+        SELECT A.USER_ID,A.OBJCLASS,A.TITLE,DATE_FORMAT(A.CREATE_DATE,'%Y-%m-%d %T') AS CREATE_DATE,A.CREATE_USERID,A.TOTAL_MONEY,
+        U.NAME AS CREAT_PERSON 
+        FROM FILE_INFOS A 
+        LEFT JOIN USER_INFO U ON A.USER_ID = U.ID 
+        WHERE A.ID = ? 
+        ]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="ID" type="STRING">{@form_id}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="form_info" key="" parentkey="">
+        <Data format="" name="*">*</Data>
+      </DataSet>
+    </Action>
+
+    <Action name="查询流程相关人员" type="SQL_QUERY" for="" next="查询当前流程节点相关人员" desc="查询流程相关人员">
+      <Expression>
+        <Sql>
+          <![CDATA[
+        SELECT A.USER_ID,A.ACTNAME,B.NAME FROM (
+SELECT USER_ID,ACTNAME FROM FILE_NODES 
+WHERE INFO_ID = ? AND (USER_ID != '' AND USER_ID IS NOT NULL)
+GROUP BY USER_ID,ACTNAME) A
+LEFT JOIN USER_INFO B ON A.USER_ID = B.ID
+
+UNION
+
+SELECT B.ID AS USER_ID,A.ACTNAME,B.NAME FROM USER_INFO B
+RIGHT JOIN (
+SELECT ROLE_ID,ACTNAME FROM FILE_NODES WHERE INFO_ID = ? AND (USER_ID = '' OR USER_ID IS  NULL) 
+GROUP BY ROLE_ID,ACTNAME) A
+ON INSTR(B.ROLEIDS,A.ROLE_ID)>0
+WHERE B.ID NOT IN (SELECT MANAGER_ID FROM COMPANY_INFO WHERE ID = ? ) AND B.COMPANY_ID = ? 
+
+        ]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="ID" type="STRING">{@form_id}</Parameter>
+          <Parameter name="ID" type="STRING">{@form_id}</Parameter>
+          <Parameter name="ID" type="STRING">{#user_company_id}</Parameter>
+          <Parameter name="ID" type="STRING">{#user_company_id}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="person_info" key="{%GUID:N}" parentkey="">
+        <Data format="" name="*">*</Data>
+      </DataSet>
+    </Action>
+
+    <Action name="查询当前流程节点相关人员" type="SQL_QUERY" for="" next="结束" desc="查询流程相关人员">
+      <Expression>
+        <Sql>
+          <![CDATA[
+        SELECT A.USER_ID FROM (
+SELECT USER_ID FROM FILE_INBOX 
+WHERE INFO_ID = ? AND (USER_ID != '' AND USER_ID IS NOT NULL)
+GROUP BY USER_ID) A
+LEFT JOIN USER_INFO B ON A.USER_ID = B.ID
+
+UNION
+
+SELECT B.ID AS USER_ID FROM USER_INFO B
+RIGHT JOIN (
+SELECT ROLE_ID FROM FILE_INBOX WHERE INFO_ID = ? AND (USER_ID = '' OR USER_ID IS  NULL) 
+GROUP BY ROLE_ID) A
+ON INSTR(B.ROLEIDS,A.ROLE_ID)>0
+WHERE B.ID NOT IN (SELECT MANAGER_ID FROM COMPANY_INFO WHERE ID = ?) AND B.COMPANY_ID = ?  
+
+        ]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="ID" type="STRING">{@form_id}</Parameter>
+          <Parameter name="ID" type="STRING">{@form_id}</Parameter>
+          <Parameter name="ID" type="STRING">{#user_company_id}</Parameter>
+          <Parameter name="ID" type="STRING">{#user_company_id}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="cur_person_info" key="{%GUID:N}" parentkey="">
+        <Data format="" name="*">*</Data>
+      </DataSet>
+    </Action>
+
+    <Action name="结束" type="END" for="" next="" desc="">
+      <Element>form_info</Element>
+      <Element>person_info</Element>
+      <ArrayKey>person_info</ArrayKey>
+      <Element>cur_person_info</Element>
+      <ArrayKey>cur_person_info</ArrayKey>
+    </Action>
+  </Actions>
+</BL>

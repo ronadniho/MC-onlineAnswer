@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BL>
+  <Actions>
+
+    <Action name="开始" type="START" for="" next="判断" desc="">
+      <DBConnection name="dsfa" trans="false" />
+    </Action>
+
+    <Action name="判断" type="SWITCH" for="" next="结束" desc="">
+      <Switch>
+        <Rule expression="'{@actionType}'=='gettime'" desc="" next="获取服务器时间" />
+      </Switch>
+    </Action>
+
+    <Action name="获取服务器时间" type="SQL_QUERY" for="" next="结束" desc="查询">
+      <Expression>
+        <Sql>
+          <![CDATA[SELECT DATE_FORMAT(NOW(),'%Y-%m-%d %T') AS SENDTIME FROM DUAL;
+        ]]>
+        </Sql>
+        <Parameters>
+        </Parameters>
+      </Expression>
+      <DataSet name="timeinfo" key="" parentkey="">
+        <Data format="" name="SENDTIME">SENDTIME</Data>
+      </DataSet>
+    </Action>
+
+    <Action name="结束" type="END" for="" next="" desc="">
+      <Element>timeinfo</Element>
+      <Element>userinfo</Element>
+    </Action>
+
+  </Actions>
+</BL>

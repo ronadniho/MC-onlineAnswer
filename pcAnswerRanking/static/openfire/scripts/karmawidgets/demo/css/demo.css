@@ -1,0 +1,145 @@
+﻿* {
+    box-sizing: border-box !important;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+.vector{
+    width:100%;
+    height:auto;
+    padding-top:20px;
+}
+.vector-title-box {
+    width: 100%;
+    height: 50px;
+    padding:0px 10px;
+    clear: both;
+}
+.vector-title {
+    width: auto;
+    height: 50px;
+    display: inline-block;
+    padding: 0px 20px;
+    background: -webkit-linear-gradient(left top,#fcc719, #fae39a); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right,#fcc719, #fae39a); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right,#fcc719, #fae39a); /* Firefox 3.6 - 15 */
+    background: linear-gradient(bottom right,#fcc719, #fae39a); /* 标准的语法 */
+}
+.vector-title span {
+    line-height: 50px;
+    color: #ffffff;
+    font-size:16px;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+}
+.vector-main {
+    width: 100%;
+    height: auto;
+    clear:both;
+    overflow:hidden;
+    margin-bottom:10px;
+}
+.vector-item {
+    height: 140px;
+    width: 340px;
+    background-color: #fc36a3;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    background: -webkit-linear-gradient(left top,#0dc6e8, #78e6fa); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right,#0dc6e8, #78e6fa); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right,#0dc6e8, #78e6fa); /* Firefox 3.6 - 15 */
+    background: linear-gradient(bottom right,#0dc6e8, #78e6fa); /* 标准的语法 */
+    box-shadow: 0px 0px 12px #b0effb;
+    float: left;
+    position: relative;
+}
+.vector-item:hover {
+    box-shadow: 0px 0px 12px #ffffff;
+}
+.vector-item:hover .v-btn {
+    border: 1px solid #ffffff;
+    background-color: #0dc6e8;
+    color: #ffffff;
+}
+.vector-item .v-name {
+    margin-top:10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+}
+.vector-item .v-email {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+}
+.vector-item .v-content {
+    margin-top:10px;
+    font-size:14px;
+    color:#ffffff;
+    overflow:hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.vector-item .v-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    height: 36px;
+    width: 140px;
+    background-color: #ffffff;
+    color: #0dc6e8;
+    border: none;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+}
+.vector-item.db {
+    background: -webkit-linear-gradient(left top,#08deaa, #7efadc); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right,#08deaa, #7efadc); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right,#08deaa, #7efadc); /* Firefox 3.6 - 15 */
+    background: linear-gradient(bottom right,#08deaa, #4afacf); /* 标准的语法 */
+}
+.vector-item.db .v-btn {
+    color: #08deaa;
+}
+.vector-item.db:hover {
+    box-shadow: 0px 0px 12px #ffffff;
+}
+.vector-item.db:hover .v-btn {
+    border: 1px solid #ffffff;
+    background-color: #08deaa;
+    color: #ffffff;
+}
+
+.vector-item.pg {
+    background: -webkit-linear-gradient(left top,#fe4c4c, #fc9191); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right,#fe4c4c, #fc9191); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right,#fe4c4c, #fc9191); /* Firefox 3.6 - 15 */
+    background: linear-gradient(bottom right,#fe4c4c, #fc9191); /* 标准的语法 */
+}
+
+.vector-item.pg .v-btn {
+    color: #fe4c4c;
+}
+
+.vector-item.pg:hover {
+    box-shadow: 0px 0px 12px #ffffff;
+}
+
+.vector-item.pg:hover .v-btn {
+    border: 1px solid #ffffff;
+    background-color: #fe4c4c;
+    color: #ffffff;
+}
+
+.vecor-page{
+    width:100%;
+    height:80px;
+    padding:0px 20px;
+}

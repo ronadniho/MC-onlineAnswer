@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BL>
+  <Actions>
+
+    <Action name="开始" type="START" for="" next="判断" desc="">
+      <DBConnection name="dsfa" trans="false" />
+    </Action>
+
+    <Action name="判断" type="SWITCH" for="" next="结束" desc="">
+      <Switch>
+        <Rule expression="'{@actionType}'=='query_entangle_info'" desc="" next="检测会话信息" />
+      </Switch>
+    </Action>
+
+    <Action name="检测会话信息" type="SQL_QUERY" for="" next="判断结果" desc="检测会话信息">
+      <Expression>
+        <Sql>
+          <![CDATA[
+        SELECT COUNT(ID) AS NUM FROM CHAT_ENTANGLEMENT WHERE (ENTITY_A = ? AND ENTITY_B = ?) OR  (ENTITY_B = ? AND ENTITY_A = ?)
+        ]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="ENTITY_A" type="STRING">{@oppositeid}</Parameter>
+          <Parameter name="ENTITY_B" type="STRING">{#userid}</Parameter>
+          <Parameter name="ENTITY_A" type="STRING">{@oppositeid}</Parameter>
+          <Parameter name="ENTITY_B" type="STRING">{#userid}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="chat_info_num" key="" parentkey="">
+        <Data format="" name="NUM">NUM</Data>
+      </DataSet>
+    </Action>
+
+    <Action name="判断结果" type="SWITCH" for="" next="结束" desc="">
+      <Switch>
+        <Rule expression="'{@NUM}'=='0'" desc="" next="创建会话信息" />
+        <Rule expression="'{@NUM}'!='0'" desc="" next="查询会话信息" />
+      </Switch>
+    </Action>
+
+    <Action name="创建会话信息" type="SQL_EXECUTE" for="" next="查询会话信息" desc="">
+      <Expression>
+        <Sql>
+          <![CDATA[
+					  INSERT INTO CHAT_ENTANGLEMENT(ID,ENTITY_A,ENTITY_B) VALUES(?,?,?) 
+					]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="ID" type="STRING">{%GUID:N}</Parameter>
+          <Parameter name="ENTITY_A" type="STRING">{@oppositeid}</Parameter>
+          <Parameter name="ENTITY_B" type="STRING">{#userid}</Parameter>
+        </Parameters>
+      </Expression>
+    </Action>
+
+    <Action name="查询会话信息" type="SQL_QUERY" for="" next="查询会话者信息" desc="查询会话信息">
+      <Expression>
+        <Sql>
+          <![CDATA[
+        SELECT ID FROM CHAT_ENTANGLEMENT WHERE (ENTITY_A = ? AND ENTITY_B = ?) OR  (ENTITY_B = ? AND ENTITY_A = ?)
+        ]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="ENTITY_A" type="STRING">{@oppositeid}</Parameter>
+          <Parameter name="ENTITY_B" type="STRING">{#userid}</Parameter>
+          <Parameter name="ENTITY_A" type="STRING">{@oppositeid}</Parameter>
+          <Parameter name="ENTITY_B" type="STRING">{#userid}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="chat_info" key="" parentkey="">
+        <Data format="" name="ID">ID</Data>
+      </DataSet>
+    </Action>
+
+    <Action name="查询会话者信息" type="SQL_QUERY" for="" next="结束" desc="查询会话者信息">
+      <Expression>
+        <Sql>
+          <![CDATA[
+          SELECT O.NICKNAME,O.GENDER,O.MOBILE,O.POSITION,O.BIRTHDAY,O.DIRECT_SUPERVISOR,O.USERPHOTO,O.EMAIL,U.NAME AS DEPTNAME,E.NAME AS LEADER  
+          FROM  USER_INFO O  
+          LEFT JOIN dept_user_link L ON L.USER_ID = O.ID 
+          LEFT JOIN dept_user_link D ON L.FID = D.ID 
+          LEFT JOIN USER_INFO U ON D.USER_ID = U.ID  
+          LEFT JOIN USER_INFO E ON O.DIRECT_SUPERVISOR = E.ID 
+          WHERE O.ID = ? 
+        ]]>
+        </Sql>
+        <Parameters>
+          <Parameter name="ID" type="STRING">{@oppositeid}</Parameter>
+        </Parameters>
+      </Expression>
+      <DataSet name="user_info" key="" parentkey="">
+        <Data format="" name="*">*</Data>
+      </DataSet>
+    </Action>
+
+    <Action name="结束" type="END" for="" next="" desc="">
+      <Element>chat_info</Element>
+      <Element>user_info</Element>
+    </Action>
+  </Actions>
+</BL>

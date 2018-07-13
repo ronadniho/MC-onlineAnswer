@@ -1,0 +1,556 @@
+﻿.karma-box-sizing {
+    box-sizing: border-box;
+}
+/*BFC开始*/
+.karam-vector-box {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    display: block;
+}
+
+.karam-vector-box:before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.karam-vector-box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/*BFC结束*/
+.karma-panel-full {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-panel-90 {
+    width: 90%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-panel-80 {
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-panel-70 {
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-panel-60 {
+    width: 60%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-panel-50 {
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-panel-40 {
+    width: 40%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-panel-33 {
+    width: 33.3333%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-panel-30 {
+    width: 30%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-panel-20 {
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-panel-10 {
+    width: 10%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-panel-full .karma-fl-left, .karma-panel-90 .karma-fl-left, .karma-panel-80 .karma-fl-left, .karma-panel-70 .karma-fl-left, .karma-panel-60 .karma-fl-left, .karma-panel-50 .karma-fl-left, .karma-panel-40 .karma-fl-left, .karma-panel-30 .karma-fl-left, .karma-panel-20 .karma-fl-left, .karma-panel-10 .karma-fl-left {
+    float: left;
+}
+
+.karma-panel-center {
+    margin: 0 auto;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+}
+
+.karma-font {
+    font-family: "Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53";
+}
+
+.karma-picture-box {
+    position: relative;
+}
+
+.karma-picture-box .karma-pic-img {
+    position: absolute;
+}
+
+.karma-button {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+    height: 36px;
+    line-height: 36px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    background-color: #48aef8;
+    color: #ffffff;
+}
+
+.karma-button-radius {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+    height: 36px;
+    line-height: 36px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    background-color: #48aef8;
+    color: #ffffff;
+    border-radius: 2px !important;
+}
+
+.karma-button-fixed-width {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: none;
+    height: 36px;
+    line-height: 36px;
+    box-sizing: border-box;
+    width: 100px;
+    background-color: #48aef8;
+    color: #ffffff;
+}
+
+.karma-btn-bg-color-red {
+    background-color: #f65454;
+    color: #ffffff;
+}
+
+.karma-btn-bg-color-green {
+    background-color: #54d41d;
+    color: #ffffff;
+}
+
+.karma-ullist {
+    list-style: none;
+}
+
+.karma-search-box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0px;
+    box-shadow: 0px 0px 10px #808080;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 100px;
+}
+
+.karma-search-box input {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.karma-search-box .right-panel {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100%;
+}
+
+.karma-search-box .right-panel .karma-search-button {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 微软雅黑, "Microsoft Yahei", "Hiragino Sans GB", tahoma, arial, 宋体;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    background-color: #46dbd6;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: left;
+    overflow: hidden;
+}
+
+.karma-search-box .right-panel .karma-search-button svg {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    margin-top: 12px;
+    margin-left: 23px;
+    margin-right: 5px;
+}
+
+.karma-search-box.karma-border-search {
+    box-shadow: none;
+    border: 1px solid #46dbd6;
+}
+
+.karma-search-box.karma-border-search .right-panel .karma-search-button {
+    height: 38px;
+    line-height: 38px;
+}
+
+.karma-search-box.karma-border-search .right-panel .karma-search-button svg {
+    margin-top: 11px;
+}
+
+.karma-search-box.red-style .right-panel .karma-search-button {
+    background-color: #f75959;
+}
+
+.karma-search-box.karma-border-search.red-style {
+    border: 1px solid #f75959;
+}
+
+.karma-search-box.karma-border-search.red-style .right-panel .karma-search-button {
+    background-color: #f75959;
+}
+
+.karma-login-panel {
+    width: 400px;
+    height: 520px;
+    box-shadow: 0px 0px 10px #808080;
+    overflow: hidden;
+}
+
+.karma-login-panel .karma-login-header {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #46dbd6;
+    color: #ffffff;
+}
+
+.karma-login-panel .karma-login-header span {
+    font-size: 16px;
+    font-family: "Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53";
+}
+
+.karma-login-panel .karma-login-tip {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 51px;
+    padding-right: 51px;
+    margin-top: 30px;
+}
+
+.karma-login-panel .karma-login-tip a {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53";
+}
+
+.karma-login-panel .karma-login-tip .user-login {
+    box-sizing: border-box;
+    float: left;
+    color: #5b5a5a;
+    font-weight: 700;
+}
+
+.karma-login-panel .karma-login-tip .user-register {
+    box-sizing: border-box;
+    float: right;
+    color: #f75959;
+    cursor:pointer;
+}
+
+.karma-login-panel .karma-login-info-panel {
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: 44px;
+}
+.karma-login-panel .karma-login-info-panel:nth-child(2n) {
+    margin-top:20px;
+}
+
+.karma-login-panel .karma-login-info-panel .karma-user-content {
+    box-sizing: border-box;
+    height: 44px;
+    border: 1px solid #dbd9d9;
+    width: 100%;
+    position: relative;
+    padding-left: 40px;
+}
+
+.karma-login-panel .karma-login-info-panel .karma-user-content svg {
+    position: absolute;
+    top: 11px;
+    left: 9px;
+}
+
+.karma-login-panel .karma-login-info-panel .karma-user-content input {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    height: 42px;
+    line-height: 42px;
+    width: 100%;
+}
+.karma-login-panel .karma-login-verfiy-panel {
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    margin-top:20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: 44px;
+}
+.karma-login-panel .karma-login-verfiy-panel .verfiy-panel {
+    box-sizing: border-box;
+    float: left;
+    width: 60%;
+    height: 44px;
+    border: 1px solid #dbd9d9;
+    position: relative;
+    padding-left: 40px;
+}
+.karma-login-panel .karma-login-verfiy-panel .verfiy-panel svg {
+    box-sizing: border-box;
+    position: absolute;
+    top: 11px;
+    left: 9px;
+}
+
+.karma-login-panel .karma-login-verfiy-panel .verfiy-panel input {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+    height: 42px;
+    line-height: 42px;
+    width: 100%;
+}
+.karma-login-panel .karma-login-verfiy-panel .verfiy-picture {
+    box-sizing: border-box;
+    float: right;
+    width: 36%;
+    height: 44px;
+    border:1px solid #dbd9d9;
+}
+
+.karma-login-panel .karma-login-other-action {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    margin-top:10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.karma-login-panel .karma-login-other-action .action-content{
+    width:100%;
+    height:100%;
+}
+.karma-login-panel .karma-login-other-action .action-content .rember-pwd{
+    float:left;
+    cursor:pointer;
+}
+.karma-login-panel .karma-login-other-action .action-content .rember-pwd-txt {
+    float: left;
+    margin-left:5px;
+    font-size:13px;
+    display:inline-block;
+    color:#b4b3b3;
+}
+.karma-login-panel .karma-login-other-action .action-content .forget-pwd-txt {
+    float: right;
+    color: #ef5252;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+}
+.karma-login-panel .karma-login-pass-action {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.karma-login-panel .karma-login-pass-action .action-content {
+    width: 100%;
+    height: 100%;
+}
+.karma-login-panel .karma-login-pass-action .action-content button{
+    width: 100%;
+    height:40px;
+    line-height:40px;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    outline:none;
+    background-color:#3bcfca;
+    color:#ffffff;
+    border-radius:1px;
+    cursor:pointer;
+}
+.karma-checkbox-css {
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.karma-checkbox-css span {
+    position: relative;
+}
+.karma-checkbox-css .input_check {
+    position: absolute;
+    visibility: hidden;
+}
+.karma-checkbox-css .input_check + label {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #dbd9d9;
+    cursor: pointer;
+}
+.karma-checkbox-css .input_check:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    bottom: 11px;
+    width: 9px;
+    height: 4px;
+    border: 2px solid #ffffff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    -ms-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -webkit-transform: rotate(-60deg);
+    transform: rotate(-45deg);
+}
+.karma-checkbox-css .input_check:checked + label {
+    background-color:#3bcfca;
+    border:none;
+}
+
+.karma-float-vector{
+    float:left;
+}
+.karma-margin-left-5{
+    margin-left:5px;
+}
+.karma-radio-panel{
+    width:21px;
+    height:21px;
+    border:2px solid #c6c5c5;
+    border-radius:50%;
+    box-sizing:border-box;
+    position:relative;
+    cursor:pointer;
+}
+.karma-radio-panel i {
+    width: 9px;
+    height: 9px;
+    left: 4px;
+    top: 4px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #ef5252;
+    border-radius: 50%;
+    display: none;
+}
+.karma-radio-panel:hover {
+    border: 2px solid #ef5252;
+}
+.karma-radio-panel.active {
+    border: 2px solid #ef5252;
+}
+.karma-radio-panel.active i {
+    display:inline-block;
+}
+.karma-radio-vector{
+    box-sizing:border-box;
+    overflow:hidden;
+}
+.karma-radio-vector .radio-describe{
+    color:#575656;
+    margin-left:5px;
+    font-size:15px;
+}

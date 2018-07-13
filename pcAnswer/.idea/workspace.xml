@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="641af5d1-297a-44d3-a06e-9cdfe359bcef" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/code.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pcDist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/css/app.2c8bf621efddeac837485ae2b995b190.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/css/app.2c8bf621efddeac837485ae2b995b190.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/img/code.319ca23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/0.71a0fc7f6d85ac6319a6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/0.71a0fc7f6d85ac6319a6.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/1.c2c2e4c76c791a57fd57.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/1.c2c2e4c76c791a57fd57.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/2.921469ad73e924e94ab4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/2.921469ad73e924e94ab4.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/3.26e66fc476b71a98de87.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/3.26e66fc476b71a98de87.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/4.07d3cc6b4b5c0fb1275a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/4.07d3cc6b4b5c0fb1275a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/6.fb338ee43c7de3574b07.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/6.fb338ee43c7de3574b07.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/app.232123c57948d008e30b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/app.232123c57948d008e30b.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/manifest.e1929505eb39d534b3f0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/manifest.e1929505eb39d534b3f0.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/vendor.6be37608345f772d6900.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pcDist/static/js/vendor.6be37608345f772d6900.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/code.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Answer.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/AnswerTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/AnswerTime.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/AudienceRanking.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/AudienceRanking.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Main.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Ranking.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Ranking.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Submit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Submit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/openfire/scripts/active.chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/openfire/scripts/active.chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/openfire/scripts/strophe.muc.extend.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/openfire/scripts/strophe.muc.extend.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Header.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/common/Header.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnswerTime.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/pages/AnswerTime.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="240" column="17" selection-start-line="240" selection-start-column="17" selection-end-line="240" selection-end-column="17" />
+              <folding>
+                <element signature="e#1066#1072#0" expanded="true" />
+                <element signature="e#1072#1078#0" expanded="true" />
+                <element signature="e#1078#1084#0" expanded="true" />
+                <element signature="e#1912#2143#0" />
+                <element signature="e#2182#2848#0" />
+                <element signature="e#2872#4108#0" />
+                <element signature="e#4204#4238#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Answer.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/pages/Answer.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="222" column="17" lean-forward="true" selection-start-line="222" selection-start-column="10" selection-end-line="222" selection-end-column="17" />
+              <folding>
+                <element signature="e#1829#2060#0" />
+                <element signature="e#2099#2765#0" />
+                <element signature="e#2793#3677#0" />
+                <element signature="e#3028#3640#0" />
+                <element signature="e#4196#4216#0" />
+                <element signature="e#6005#6523#0" />
+                <element signature="n#style#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.base.conf.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/webpack.base.conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1230">
+              <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="active.chat.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/openfire/scripts/active.chat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="573" column="117" selection-start-line="573" selection-start-column="89" selection-end-line="573" selection-end-column="117" />
+              <folding>
+                <element signature="e#104#240#0" />
+                <element signature="e#307#763#0" />
+                <element signature="e#826#1036#0" />
+                <element signature="e#1111#1171#0" />
+                <element signature="e#1243#1303#0" />
+                <element signature="e#1386#1480#0" />
+                <element signature="e#1560#1623#0" />
+                <element signature="e#1788#1887#0" />
+                <element signature="e#1966#2129#0" />
+                <element signature="e#2231#2330#0" />
+                <element signature="e#2403#2562#0" />
+                <element signature="e#2634#2735#0" />
+                <element signature="e#2841#2996#0" />
+                <element signature="e#3064#3160#0" />
+                <element signature="e#3268#3487#0" />
+                <element signature="e#3557#3653#0" />
+                <element signature="e#3759#4037#0" />
+                <element signature="e#4107#4172#0" />
+                <element signature="e#4299#4531#0" />
+                <element signature="e#4609#4688#0" />
+                <element signature="e#5643#5771#0" />
+                <element signature="e#5807#5935#0" />
+                <element signature="e#5970#7363#0" />
+                <element signature="e#7401#8808#0" />
+                <element signature="e#8846#9155#0" />
+                <element signature="e#10431#11240#0" />
+                <element signature="e#11294#11743#0" />
+                <element signature="e#11787#11874#0" />
+                <element signature="e#11933#12243#0" />
+                <element signature="e#15049#15094#0" />
+                <element signature="e#15249#16219#0" />
+                <element signature="e#16285#16425#0" />
+                <element signature="e#16550#17571#0" />
+                <element signature="e#17688#18477#0" />
+                <element signature="e#18619#19006#0" />
+                <element signature="e#20020#20736#0" />
+                <element signature="e#20797#21218#0" />
+                <element signature="e#21281#21460#0" />
+                <element signature="e#21538#21929#0" />
+                <element signature="e#22021#22394#0" />
+                <element signature="e#22489#22962#0" />
+                <element signature="e#23012#23690#0" />
+                <element signature="e#23769#24145#0" />
+                <element signature="e#24612#25856#0" />
+                <element signature="e#25891#25950#0" />
+                <element signature="e#25981#26206#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strophe.muc.extend.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/openfire/scripts/strophe.muc.extend.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>selec</find>
+      <find>grid-gap</find>
+      <find>submit</find>
+      <find>examName</find>
+      <find>result-item</find>
+      <find>goLink</find>
+      <find>warning</find>
+      <find>count</find>
+      <find>logo</find>
+      <find>user</find>
+      <find>this.$router</find>
+      <find>css-loader</find>
+      <find>getServerData</find>
+      <find>infinite</find>
+      <find>headers</find>
+      <find>jQuery</find>
+      <find>next</find>
+      <find>code</find>
+      <find>debugger</find>
+      <find>title</find>
+      <find>.base</find>
+      <find>.title</find>
+      <find>PAGECOUNT</find>
+      <find>refresh</find>
+      <find>option_content</find>
+      <find>alert</find>
+      <find>onFetchRoomMemberListSuccess</find>
+      <find>,</find>
+      <find>chatAdminCreate</find>
+      <find>queyRoomMemberList</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>.group</replace>
+      <replace>reg</replace>
+      <replace>this.canvas</replace>
+      <replace>mobile</replace>
+      <replace>rem</replace>
+      <replace>px;/*no*/</replace>
+      <replace>$</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/pages/register.vue" />
+        <option value="$USER_HOME$/Desktop/水波.html" />
+        <option value="$USER_HOME$/Desktop/水球/index.html" />
+        <option value="$PROJECT_DIR$/src/api/h-liquid.js" />
+        <option value="$PROJECT_DIR$/src/components/common/WaterPolo.vue" />
+        <option value="$PROJECT_DIR$/src/components/common/Loading.vue" />
+        <option value="$PROJECT_DIR$/src/components/common/warning.vue" />
+        <option value="$PROJECT_DIR$/src/api/config.js" />
+        <option value="$PROJECT_DIR$/src/api/json.js" />
+        <option value="$PROJECT_DIR$/node_modules/_vue-scroller@2.2.4@vue-scroller/dist/vue-scroller.min.js" />
+        <option value="$PROJECT_DIR$/src/mui.less" />
+        <option value="$PROJECT_DIR$/src/api/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/AnswerResult.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/ReadAnswer.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/main.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/answer.vue" />
+        <option value="$PROJECT_DIR$/static/flexible.js" />
+        <option value="$PROJECT_DIR$/static/flexible.min.js" />
+        <option value="$PROJECT_DIR$/build/utils.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/registe.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/Register.vue" />
+        <option value="$PROJECT_DIR$/src/api/common.js" />
+        <option value="$PROJECT_DIR$/config/index.js" />
+        <option value="$PROJECT_DIR$/../webAppAnswer/src/components/pages/Answer.vue" />
+        <option value="$PROJECT_DIR$/src/api/socket.io-client.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$USER_HOME$/Desktop/lx/translate.html" />
+        <option value="$PROJECT_DIR$/static/openfire/scripts/config.js" />
+        <option value="$PROJECT_DIR$/static/openfire/scripts/openfire.setting.js" />
+        <option value="$PROJECT_DIR$/static/openfire/scripts/karmawidgets/plugin.js" />
+        <option value="$PROJECT_DIR$/static/openfire/chat.html" />
+        <option value="$PROJECT_DIR$/src/components/pages/Registers.vue" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/config/config.js" />
+        <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/Submit.vue" />
+        <option value="$PROJECT_DIR$/src/components/common/select.js" />
+        <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/Main.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/Login.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/Ranking.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/AudienceRanking.vue" />
+        <option value="$PROJECT_DIR$/src/components/common/Header.vue" />
+        <option value="$PROJECT_DIR$/static/openfire/scripts/active.chat.js" />
+        <option value="$PROJECT_DIR$/static/openfire/scripts/strophe.muc.extend.js" />
+        <option value="$USER_HOME$/Desktop/ws/ws.html" />
+        <option value="$USER_HOME$/Desktop/ws/server/server.js" />
+        <option value="$PROJECT_DIR$/src/components/pages/Answer.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/AnswerTime.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pcAnswer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcAnswer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pcAnswer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcAnswer" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pcAnswer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcAnswer" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pcAnswer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcAnswer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pcAnswer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcAnswer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pcAnswer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcAnswer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ws" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\superAnswer\pcAnswer\static\openfire\scripts" />
+      <recent name="D:\workspace\superAnswer\pcAnswer\src\assets" />
+      <recent name="D:\workspace\superAnswer\pcAnswer\src\components\pages" />
+      <recent name="D:\workspace\superAnswer\pcAnswer\static" />
+      <recent name="D:\workspace\webAppAnswer\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\superAnswer\pcAnswer\src\api" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="641af5d1-297a-44d3-a06e-9cdfe359bcef" name="Default" comment="" />
+      <created>1528616372156</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528616372156</updated>
+      <workItem from="1528616373433" duration="8190000" />
+      <workItem from="1528679740321" duration="27844000" />
+      <workItem from="1528765498746" duration="34785000" />
+      <workItem from="1528852184872" duration="3825000" />
+      <workItem from="1528857422148" duration="3000" />
+      <workItem from="1528859194617" duration="2000" />
+      <workItem from="1528859638847" duration="22319000" />
+      <workItem from="1528939203700" duration="18523000" />
+      <workItem from="1529025518186" duration="18063000" />
+      <workItem from="1529370442741" duration="5742000" />
+      <workItem from="1529477786949" duration="2048000" />
+      <workItem from="1529556721985" duration="17918000" />
+      <workItem from="1529588405764" duration="194000" />
+      <workItem from="1529630364705" duration="26822000" />
+      <workItem from="1529888477245" duration="1085000" />
+      <workItem from="1529892056958" duration="23130000" />
+      <workItem from="1529974637042" duration="17849000" />
+      <workItem from="1530062506671" duration="7533000" />
+      <workItem from="1530090228617" duration="3524000" />
+      <workItem from="1530148647065" duration="21825000" />
+      <workItem from="1530243843732" duration="8181000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="269405000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.50631136" visible="true" weight="0.19656488" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959327" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3255814" />
+      <window_info id="Structure" order="0" sideWeight="0.49368864" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.0" />
+      <window_info id="Favorites" order="1" sideWeight="0.50209206" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959327" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.50631136" visible="true" weight="0.21183206" />
+      <window_info id="Structure" order="1" sideWeight="0.49368864" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959327" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3255814" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" sideWeight="0.50209206" side_tool="true" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="23" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/node_modules/vue-socket.io/dist/build.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/socket.io-client/lib/manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/socket.io-client/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-472">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../IPB2018/WebRoot/pcDist/static/js/0.fefe11bb942c263dd733.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/websocket_socketIo/websocket/ch5/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/lx/translate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Register.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="171" column="16" selection-end-line="240" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/openfire/scripts/karmawidgets/plugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="111" column="6" selection-start-line="111" selection-end-line="111" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/openfire/scripts/openfire.setting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/openfire/scripts/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/openfire/chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="75" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webpack-dev-server/lib/Server.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webpack-dev-server/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5280">
+          <caret line="176" column="11" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Register.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7200">
+          <caret line="240" selection-start-line="240" selection-end-line="240" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22830">
+          <caret line="762" column="38" selection-start-line="762" selection-start-column="28" selection-end-line="762" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcDist/static/js/1.d80ba123435832f0cc53.js" />
+    <entry file="file://$PROJECT_DIR$/pcDist/static/js/2.9de3aca791d7951c6330.js" />
+    <entry file="file://$PROJECT_DIR$/pcDist/static/js/manifest.32a441ade94b1f9af1c5.js" />
+    <entry file="file://$PROJECT_DIR$/pcDist/static/js/vendor.6be37608345f772d6900.js" />
+    <entry file="file://$PROJECT_DIR$/pcDist/static/js/app.8b809532a55ecb5c19e0.js" />
+    <entry file="file://$PROJECT_DIR$/pcDist/static/img/main2.b81e6a7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcDist/static/css/app.fa67864df01a5edb063cf60592a2fe4c.css" />
+    <entry file="file://$PROJECT_DIR$/pcDist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret column="1235" lean-forward="true" selection-start-column="1235" selection-end-column="1235" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/check-versions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1141" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/vue-loader.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/select.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/variable.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
+          <folding>
+            <element signature="n#template#0;n#!!top" />
+            <element signature="n#style#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Main.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/AudienceRanking.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
+          <folding>
+            <element signature="e#1217#1390#0" />
+            <element signature="e#1429#1660#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Submit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#section#0;n#template#0;n#!!top" />
+            <element signature="n#script#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Ranking.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+          <folding>
+            <element signature="n#template#0;n#!!top" />
+            <element signature="e#1399#1630#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../IPB2018/WebRoot/openfire/scripts/karmawidgets/plugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19999" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/Header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/openfire/scripts/strophe.muc.extend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/openfire/scripts/active.chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="573" column="117" selection-start-line="573" selection-start-column="89" selection-end-line="573" selection-end-column="117" />
+          <folding>
+            <element signature="e#104#240#0" />
+            <element signature="e#307#763#0" />
+            <element signature="e#826#1036#0" />
+            <element signature="e#1111#1171#0" />
+            <element signature="e#1243#1303#0" />
+            <element signature="e#1386#1480#0" />
+            <element signature="e#1560#1623#0" />
+            <element signature="e#1788#1887#0" />
+            <element signature="e#1966#2129#0" />
+            <element signature="e#2231#2330#0" />
+            <element signature="e#2403#2562#0" />
+            <element signature="e#2634#2735#0" />
+            <element signature="e#2841#2996#0" />
+            <element signature="e#3064#3160#0" />
+            <element signature="e#3268#3487#0" />
+            <element signature="e#3557#3653#0" />
+            <element signature="e#3759#4037#0" />
+            <element signature="e#4107#4172#0" />
+            <element signature="e#4299#4531#0" />
+            <element signature="e#4609#4688#0" />
+            <element signature="e#5643#5771#0" />
+            <element signature="e#5807#5935#0" />
+            <element signature="e#5970#7363#0" />
+            <element signature="e#7401#8808#0" />
+            <element signature="e#8846#9155#0" />
+            <element signature="e#10431#11240#0" />
+            <element signature="e#11294#11743#0" />
+            <element signature="e#11787#11874#0" />
+            <element signature="e#11933#12243#0" />
+            <element signature="e#15049#15094#0" />
+            <element signature="e#15249#16219#0" />
+            <element signature="e#16285#16425#0" />
+            <element signature="e#16550#17571#0" />
+            <element signature="e#17688#18477#0" />
+            <element signature="e#18619#19006#0" />
+            <element signature="e#20020#20736#0" />
+            <element signature="e#20797#21218#0" />
+            <element signature="e#21281#21460#0" />
+            <element signature="e#21538#21929#0" />
+            <element signature="e#22021#22394#0" />
+            <element signature="e#22489#22962#0" />
+            <element signature="e#23012#23690#0" />
+            <element signature="e#23769#24145#0" />
+            <element signature="e#24612#25856#0" />
+            <element signature="e#25891#25950#0" />
+            <element signature="e#25981#26206#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ws/ws.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ws/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Answer.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="222" column="17" lean-forward="true" selection-start-line="222" selection-start-column="10" selection-end-line="222" selection-end-column="17" />
+          <folding>
+            <element signature="e#1829#2060#0" />
+            <element signature="e#2099#2765#0" />
+            <element signature="e#2793#3677#0" />
+            <element signature="e#3028#3640#0" />
+            <element signature="e#4196#4216#0" />
+            <element signature="e#6005#6523#0" />
+            <element signature="n#style#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/AnswerTime.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="240" column="17" selection-start-line="240" selection-start-column="17" selection-end-line="240" selection-end-column="17" />
+          <folding>
+            <element signature="e#1066#1072#0" expanded="true" />
+            <element signature="e#1072#1078#0" expanded="true" />
+            <element signature="e#1078#1084#0" expanded="true" />
+            <element signature="e#1912#2143#0" />
+            <element signature="e#2182#2848#0" />
+            <element signature="e#2872#4108#0" />
+            <element signature="e#4204#4238#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
